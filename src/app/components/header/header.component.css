@@ -1,0 +1,7 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background-color: #dcaa7d;
+    margin-bottom: 20px;
+}

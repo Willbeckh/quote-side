@@ -1,0 +1,17 @@
+.quote {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.quote p {
+  font-size: 1em;
+  color: #696666;
+  font-family: monospace;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
