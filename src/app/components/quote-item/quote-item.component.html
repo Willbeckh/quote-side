@@ -1,10 +1,14 @@
 <div class="quote">
-  <fa-icon [icon]="faQuoteLeftAlt"></fa-icon>
+  <fa-icon [icon]="faQuoteLeftAlt" [ngStyle]="{ color: 'blue' }"></fa-icon>
   <h3>
     {{ quote.text }}
   </h3>
   <p>
     ~ {{ quote.author }}
-    <fa-icon [ngStyle]="{ color: 'red' }" [icon]="faTrash"></fa-icon>
+    <fa-icon
+      (click)="onClickDelete(quote)"
+      [ngStyle]="{ color: 'red' }"
+      [icon]="faTrash"
+    ></fa-icon>
   </p>
 </div>
