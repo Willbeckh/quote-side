@@ -1,0 +1,16 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "text": "it takes as much energy to wish as it is to plan",
+      "author": "Eleanor Roosevelt",
+      "date": "1947-06-12"
+    },
+    {
+      "id": 2,
+      "text": "Never overlook the power of simplicity.",
+      "author": "Robin S. Sharma",
+      "date": "2022-04-07"
+    }
+  ]
+}
