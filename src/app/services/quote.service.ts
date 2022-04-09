@@ -1,18 +1,22 @@
 import { Injectable } from '@angular/core';
-import {Observable, of} from 'rxjs'
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { Quote } from '../quote';
-import { QUOTES } from '../mock-quotes';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class QuoteService {
+  private apiUrl = 'http://localhost:3000/quotes';
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
-
-  // GET all quotes
+  // GET all quotes from api backend
   getQuotes(): Observable<Quote[]> {
-    const quotes = of(QUOTES);
-    return quotes;
+    return this.http.get<Quote[]>(this.apiUrl);
+  }
+
+  deleteQuote(quote: Quote): Observable<Quote> {
+    const urlOfQuote = `${this.apiUrl}/${quote.id}`;
+    return this.http.delete<Quote>(urlOfQuote);
   }
 }
