@@ -7,12 +7,19 @@ import { Quote } from '../../quote';
   templateUrl: './quotes.component.html',
   styleUrls: ['./quotes.component.css'],
 })
-
 export class QuotesComponent implements OnInit {
   quotes: Quote[] = [];
   constructor(private quoteService: QuoteService) {}
 
   ngOnInit(): void {
     this.quoteService.getQuotes().subscribe((quotes) => (this.quotes = quotes));
+  }
+
+  onDeleteQuote(quote: Quote) {
+    this.quoteService
+      .deleteQuote(quote)
+      .subscribe(
+        () => (this.quotes = this.quotes.filter((q) => q.id !== quote.id))
+      );
   }
 }
