@@ -22,4 +22,8 @@ export class QuotesComponent implements OnInit {
         () => (this.quotes = this.quotes.filter((q) => q.id !== quote.id))
       );
   }
+
+  addQuote(quote: Quote): void {
+    this.quoteService.addQuote(quote).subscribe((quote) => this.quotes.push(quote));
+  }
 }
