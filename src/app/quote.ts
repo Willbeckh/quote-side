@@ -1,6 +1,7 @@
 export interface Quote {
-    id?: number;
-    text: string;
-    author: string;
-    date: string
+  // this is the interface for the quote object
+  id?: number;
+  text: string;
+  author: string;
+  date: string;
 }
