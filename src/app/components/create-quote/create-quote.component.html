@@ -1,8 +1,25 @@
-<form action="">
-    
-    <div class="form-control">
-        <label for="text">Quote </label>
-        <input type="text" id="text" placeholder="Type quote..">
-        <input type="submit" value="Add quote">
-    </div>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">Quote: </label>
+    <input
+      type="text"
+      name="text"
+      [(ngModel)]="text"
+      id="text"
+      placeholder="Add quote.."
+    />
+
+    <br />
+    <label for="author">Author: </label>
+    <input
+      type="text"
+      name="author"
+      id="author"
+      [(ngModel)]="author"
+      placeholder="Author name"
+    />
+    <input type="submit" value="Add quote" />
+  </div>
+  {{ text }}
+  <!--two way data binding-->
 </form>
