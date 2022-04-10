@@ -1,7 +1,16 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    background-color: #dcaa7d;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #dcaa7d;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.nav-links {
+  align-self: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: rgb(16, 238, 227);
+  margin: 4px;
 }
