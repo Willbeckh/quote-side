@@ -15,3 +15,12 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.like-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-box .buttons {
+  display: flex;
+}

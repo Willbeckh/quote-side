@@ -1,6 +1,4 @@
 <div class="box">
   {{ numberOfDislikes }}
-  <button (click)="downVote()">
-    <fa-icon [icon]="faArrowTrendDown"></fa-icon>
-  </button>
+  <fa-icon [icon]="faArrowTrendDown" (click)="downVote()"></fa-icon>
 </div>

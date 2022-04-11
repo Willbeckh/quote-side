@@ -3,16 +3,17 @@
   <h3>
     {{ quote.text }}
   </h3>
-  <p>
-    ~ {{ quote.author }}
+  <p>~ {{ quote.author }}</p>
+
+  <div class="like-box">
+    <div class="buttons">
+      <app-like-box></app-like-box>
+      <app-dislike-box></app-dislike-box>
+    </div>
     <fa-icon
       (click)="onClickDelete(quote)"
       [ngStyle]="{ color: 'red' }"
       [icon]="faTrash"
     ></fa-icon>
-  </p>
-  <div class="like-box">
-    <app-like-box></app-like-box>
-    <app-dislike-box></app-dislike-box>
   </div>
 </div>
