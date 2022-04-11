@@ -11,8 +11,6 @@ import { CreateQuoteComponent } from './components/create-quote/create-quote.com
 import { QuotesComponent } from './components/quotes/quotes.component';
 import { QuoteItemComponent } from './components/quote-item/quote-item.component';
 import { HomeComponent } from './components/home/home.component';
-import { LikeBoxComponent } from './components/like-box/like-box.component';
-import { DislikeBoxComponent } from './components/dislike-box/dislike-box.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +20,6 @@ import { DislikeBoxComponent } from './components/dislike-box/dislike-box.compon
     QuotesComponent,
     QuoteItemComponent,
     HomeComponent,
-    LikeBoxComponent,
-    DislikeBoxComponent,
   ],
   imports: [
     BrowserModule,
