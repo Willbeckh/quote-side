@@ -4,6 +4,6 @@ export interface Quote {
   text: string;
   author: string;
   date: string;
-  likes: number;
-  dislikes: number;
+  upvotes: number;
+  downvotes: number;
 }
