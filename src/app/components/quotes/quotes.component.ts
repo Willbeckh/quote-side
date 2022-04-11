@@ -24,6 +24,15 @@ export class QuotesComponent implements OnInit {
   }
 
   addQuote(quote: Quote): void {
-    this.quoteService.addQuote(quote).subscribe((quote) => this.quotes.push(quote));
+    this.quoteService
+      .addQuote(quote)
+      .subscribe((quote) => this.quotes.push(quote));
+  }
+
+  // lets see this if will work.
+  onLike(quote: Quote): void {
+    this.quoteService
+      .onLikeQuote(quote)
+      .subscribe((quote) => this.quotes.push(quote));
   }
 }

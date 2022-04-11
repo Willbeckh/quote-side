@@ -10,8 +10,8 @@ export class CreateQuoteComponent implements OnInit {
   text!: string;
   author!: string;
   date!: string;
-  likes!: number;
-  dislikes!: number;
+  upvotes: number = 0;
+  downvotes: number = 0;
 
   constructor() {}
 
@@ -28,11 +28,10 @@ export class CreateQuoteComponent implements OnInit {
       text: this.text,
       author: this.author,
       date: this.date,
-      likes: this.likes,
-      dislikes: this.dislikes,
+      upvotes: this.upvotes,
+      downvotes: this.downvotes,
     };
 
-    // @TODO: send quote to server via emit
     this.onAddQuote.emit(newQuote);
 
     // reset form

@@ -1,9 +1,10 @@
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #dcaa7d;
-  margin-bottom: 20px;
-  padding: 10px;
+  background: linear-gradient(45deg,#3e1ccd,#ff6871);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 1.4%;
 }
 
 .nav-links {
@@ -11,6 +12,12 @@ header {
 }
 .nav-links a {
   text-decoration: none;
-  color: rgb(16, 238, 227);
-  margin: 4px;
+  color: #2c1e55;
+  margin: 8px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  border-bottom: 4px solid #303133;
 }

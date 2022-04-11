@@ -1,5 +1,8 @@
 <header>
-  <h2>{{ title | titlecase }}.</h2>
+  <h2 [ngStyle]="{ color: '#fff' }">
+    {{ title
+    }}<fa-icon [icon]="faAtom" [ngStyle]="{ color: 'green' }"></fa-icon>
+  </h2>
   <nav class="nav-links">
     <a routerLink="/">Home</a>
     <a routerLink="/quotes">Library</a>
