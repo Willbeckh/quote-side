@@ -10,7 +10,8 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class QuoteService {
-  private apiUrl = 'http://localhost:3000/quotes';
+  private apiUrl =
+    'https://my-json-server.typicode.com/Willbeckh/quote-side/quotes';
 
   constructor(private http: HttpClient) {}
 
@@ -26,5 +27,14 @@ export class QuoteService {
 
   addQuote(quote: Quote): Observable<Quote> {
     return this.http.post<Quote>(this.apiUrl, quote, httpOptions);
+  }
+
+  // this tries to update the number of likes.
+  onLikeQuote(quote: Quote): Observable<Quote> {
+    return this.http.put<Quote>(
+      `${this.apiUrl}/${quote.upvotes}`,
+      quote,
+      httpOptions
+    );
   }
 }
