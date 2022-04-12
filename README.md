@@ -4,7 +4,7 @@
 
 This is a single paged application that allows users to view available quotes, create new quotes, upvote/downVote a quote, and delete a quote.
 
-Deploy version: <a href="https://willbeckh.github.io/quote-side/quotes">site view.</a>
+Deploy version: <a href="https://willbeckh.github.io/quote-side/">site view.</a>
 ## Installation
 
 Clone the repository and run the following command:
