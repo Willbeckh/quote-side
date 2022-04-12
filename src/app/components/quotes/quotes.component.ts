@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuoteService } from '../../services/quote.service';
+// import { QUOTES } from '../../mock-quotes'; // not necessary whern using services
 import { Quote } from '../../quote';
 
 @Component({
@@ -12,27 +13,13 @@ export class QuotesComponent implements OnInit {
   constructor(private quoteService: QuoteService) {}
 
   ngOnInit(): void {
-    this.quoteService.getQuotes().subscribe((quotes) => (this.quotes = quotes));
+    this.quotes = this.quoteService.getQuotes();
   }
 
-  onDeleteQuote(quote: Quote) {
-    this.quoteService
-      .deleteQuote(quote)
-      .subscribe(
-        () => (this.quotes = this.quotes.filter((q) => q.id !== quote.id))
-      );
-  }
-
-  addQuote(quote: Quote): void {
-    this.quoteService
-      .addQuote(quote)
-      .subscribe((quote) => this.quotes.push(quote));
-  }
-
-  // lets see this if will work.
-  onLike(quote: Quote): void {
-    this.quoteService
-      .onLikeQuote(quote)
-      .subscribe((quote) => this.quotes.push(quote));
+  addQuote(quote: Quote) {
+    // this.quoteService.addQuotes(quote);
+    this.quotes.push(quote);
+    // return aq;
+    // console.log('add a quote! not working.');
   }
 }

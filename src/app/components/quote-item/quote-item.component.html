@@ -7,16 +7,15 @@
 
   <div class="like-box">
     <div class="btns">
-      <fa-icon [icon]="faThumbsUp" (click)="upvote(quote)" [ngStyle]="{'color': 'green'}"></fa-icon>
+      <fa-icon [icon]="faThumbsUp" [ngStyle]="{ color: 'blue' }"></fa-icon>
       <span>{{ quote.upvotes }}</span>
 
-      <fa-icon [icon]="faArrowAltCircleDown" (click)="downvote()"></fa-icon>
+      <fa-icon
+        [icon]="faArrowAltCircleDown"
+        [ngStyle]="{ color: '#9e5c41' }"
+      ></fa-icon>
       <span>{{ quote.downvotes }}</span>
     </div>
-    <fa-icon
-      (click)="onClickDelete(quote)"
-      [ngStyle]="{ color: 'red' }"
-      [icon]="faTrash"
-    ></fa-icon>
+    <fa-icon [ngStyle]="{ color: 'red' }" [icon]="faTrash"></fa-icon>
   </div>
 </div>

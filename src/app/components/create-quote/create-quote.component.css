@@ -1,0 +1,28 @@
+.form-control {
+  display: flex;
+  /* flex-direction: row; */
+  margin: 10px;
+}
+
+.input {
+  padding: 0 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #772099;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.send-btn {
+  padding: 10px;
+  margin: 8px 0;
+}
+input[type="submit"]:hover {
+  background-color: #4caf50;
+  color: #9e5c41;
+}
