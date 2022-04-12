@@ -25,4 +25,8 @@ export class QuoteItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  upVote(): void {
+    this.quote.upvotes++;
+  }
 }

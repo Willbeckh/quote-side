@@ -10,7 +10,7 @@ export class CreateQuoteComponent implements OnInit {
   text!: string;
   author!: string;
   date!: string;
-  upvotes: number = 0;
+  upvotes: number = 1;
   downvotes: number = 0;
 
   constructor() {}

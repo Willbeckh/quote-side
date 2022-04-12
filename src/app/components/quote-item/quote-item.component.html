@@ -7,12 +7,13 @@
 
   <div class="like-box">
     <div class="btns">
-      <fa-icon [icon]="faThumbsUp" [ngStyle]="{ color: 'blue' }"></fa-icon>
+      <fa-icon [icon]="faThumbsUp" [ngStyle]="{ color: 'blue' }" (click)="upVote()"></fa-icon>
       <span>{{ quote.upvotes }}</span>
 
       <fa-icon
         [icon]="faArrowAltCircleDown"
         [ngStyle]="{ color: '#9e5c41' }"
+        
       ></fa-icon>
       <span>{{ quote.downvotes }}</span>
     </div>
