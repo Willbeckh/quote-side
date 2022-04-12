@@ -13,7 +13,7 @@
       <fa-icon
         [icon]="faArrowAltCircleDown"
         [ngStyle]="{ color: '#9e5c41' }"
-        
+        (click)="downVote()"
       ></fa-icon>
       <span>{{ quote.downvotes }}</span>
     </div>

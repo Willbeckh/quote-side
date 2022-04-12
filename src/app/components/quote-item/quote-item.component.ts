@@ -29,4 +29,8 @@ export class QuoteItemComponent implements OnInit {
   upVote(): void {
     this.quote.upvotes++;
   }
+
+  downVote(): void {
+    this.quote.downvotes++;
+  }
 }
