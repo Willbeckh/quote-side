@@ -2,5 +2,16 @@
 
 <!-- home content section -->
 <div class="hero">
-  <p>There is no place like 127.0.01</p>
+  <div class="quote-container">
+    <div class="quote-caption">
+      <div class="quote-left">
+        <fa-icon [icon]="faQuoteLeft"></fa-icon>
+      </div>
+      <p>{{ quote }}</p>
+      <p class="author">{{ quoteAuthor }}</p>
+      <div class="quote-right">
+        <fa-icon [icon]="faQuoteRight"></fa-icon>
+      </div>
+    </div>
+  </div>
 </div>
