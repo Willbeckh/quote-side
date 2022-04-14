@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   faQuoteRight = faQuoteRight;
   quote: string =
     'Happiness is the meaning and the purpose of life, the whole aim and end of human existence.';
-  quoteAuthor: string = '- Aristotle';
+  quoteAuthor: string = '~ Aristotle';
   constructor() {}
 
   ngOnInit(): void {}
