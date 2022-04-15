@@ -1,5 +1,7 @@
 .quote {
-  background: #f4f4f4;
+  /* background: #f4f4f4; */
+  border: #696666 1px solid;
+  border-radius: 10px;
   margin: 5px;
   padding: 10px 16px;
   cursor: pointer;
@@ -7,7 +9,7 @@
 
 .quote p {
   font-size: 1em;
-  color: #696666;
+  color: #b9b7b7;
   font-family: monospace;
   font-weight: bold;
 
@@ -21,6 +23,12 @@
   justify-content: space-between;
 }
 
-.btns span{
+.btns span {
   padding: 5px;
+}
+
+fa-icon:nth-child(2n):hover {
+  padding: 2px;
+  border-radius: 2px;
+  background-color: rgb(30, 30, 66);
 }

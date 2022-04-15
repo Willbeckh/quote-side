@@ -3,7 +3,6 @@ export interface Quote {
   id?: number;
   text: string;
   author: string;
-  date: string;
   upvotes: number;
   downvotes: number;
 }
