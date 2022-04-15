@@ -23,6 +23,12 @@
   justify-content: space-between;
 }
 
-.btns span{
+.btns span {
   padding: 5px;
+}
+
+fa-icon:nth-child(2n):hover {
+  padding: 2px;
+  border-radius: 2px;
+  background-color: rgb(30, 30, 66);
 }

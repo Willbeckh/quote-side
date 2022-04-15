@@ -16,7 +16,7 @@ import {
 export class QuoteItemComponent implements OnInit {
   @Input() quote!: Quote;
   // @Output() deleteQuote: EventEmitter<Quote> = new EventEmitter();
-  // @Output() onLike: EventEmitter<Quote> = new EventEmitter();
+  @Output() onDelete = new EventEmitter<boolean>();
   faTrash = faTrash;
   faQuoteLeftAlt = faQuoteLeftAlt;
   faThumbsUp = faThumbsUp;
@@ -25,6 +25,11 @@ export class QuoteItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  // methods
+  deleteQuote(deleted: boolean) {
+    this.onDelete.emit(deleted);
+  }
 
   upVote(): void {
     this.quote.upvotes++;
