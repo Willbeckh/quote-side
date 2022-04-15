@@ -16,10 +16,14 @@ export class QuotesComponent implements OnInit {
     this.quotes = this.quoteService.getQuotes();
   }
 
+  // methods
   addQuote(quote: Quote) {
-    // this.quoteService.addQuotes(quote);
     this.quotes.push(quote);
-    // return aq;
-    // console.log('add a quote! not working.');
+  }
+
+  deleteGoal(toDelete: any, index: any) {
+    confirm('Are you sure to delete?') === true
+      ? this.quotes.splice(index, 1)
+      : false;
   }
 }
