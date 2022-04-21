@@ -1,2 +1,0 @@
-# QuoteSide
-s
